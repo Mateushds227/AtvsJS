@@ -1,0 +1,14 @@
+{
+  "ID": "7",
+  "Sigla": "DF",
+  "Nome": "Distrito Federal",
+  "capital": "Brasília",
+  "qtn_cidades": 1,
+  "cidades": [
+    {
+      "ID": "882",
+      "Nome": "Brasília",
+      "Estado": "7"
+    }
+  ]
+}
