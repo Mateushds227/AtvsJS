@@ -1,0 +1,44 @@
+body {
+  padding: 10px;
+}
+
+.country-container {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.country {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add {
+  border-radius: 50%;
+  background-color: darkgreen;
+  color: white;
+  font-weight: bold;
+}
+
+.country-list {
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-right: 10px;
+} 
+
+.memes{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+img{
+  width : 50em;
+  height : 50em ;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-right: 10px;
+}
