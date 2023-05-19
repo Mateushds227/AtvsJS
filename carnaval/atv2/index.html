@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var criterios = ["criatividade", "originalidade", "elegancia", "acabamento", "conservacao"]
+        var fantasia = []
+        var nomeAluno = []
+        var notas = []
+        var qtdAlunos = parseInt(prompt("Quantos alunos irao participar ?"))
+
+
+        for (i = 0; i < qtdAlunos; i++) {
+            nomeAluno.push(prompt("Insira o nome do aluno : "))
+            fantasia.push(prompt("Insira o nome da fantasia do aluno inserido:"))
+        }
+
+        var x = 0
+        for (i = 0; i < qtdAlunos; i++) {
+            alert(`De sua nota da fantasia: ${fantasia[i]}`)
+            var notaTotal = 0;
+            var notaMediaDoAluno = 0;
+            var menorNota = 0;
+            var maiorNota = 0;
+            var notas_tt = []
+            var notasNum = [];
+            while (x < criterios.length) {
+                notaDoMomento = parseFloat(prompt("Digite uma nota de 5.0 ate 10.0 para " + criterios[x] + ":"))
+                if (notaDoMomento >= 5.0 && notaDoMomento <= 10.0) {
+                    x++;
+                    notasNum.push(notaDoMomento);
+                    notaTotal += notaDoMomento;
+                } else {
+                    alert("Digite um numero correto!")
+                }
+            }
+            x = 0;
+            notas_tt = notasNum.sort((a, b) => a - b)
+            maiorNota = notas_tt[4];
+            menorNota = notas_tt[0];
+            notaMediaDoAluno = notaTotal - (maiorNota + menorNota);
+            notas.push(notaMediaDoAluno);
+        }
+        maiornotaalunos = Math.max.apply(null, notas)
+        indexMaiorNota = notas.indexOf(maiornotaalunos)
+
+
+        alert(`O Aluno ganhador foi ${nomeAluno[indexMaiorNota]}, com a fantasia de ${fantasia[indexMaiorNota]}`)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

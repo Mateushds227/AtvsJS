@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var consu_diario = parseInt(prompt(`Quantos packs você consumiu no total durante o carnaval?`))
+        function gastosCarnaval(consu_diario) {
+            var var_gasto = consu_diario * 38;
+            var gastoDiario = var_gasto / 5;
+            return `Nessa carnaval você gastou: R$ ${var_gasto}\r\nEm média você gastou: R$ ${gastoDiario} em cada dia do carnaval`
+        }
+        function bebidasCaranaval(consu_diario) {
+            var qtd_lata = consu_diario * 12;
+            var qtdBebida = qtd_lata * 350;
+            return `Nesse carnaval você bebeu ${qtd_lata} latas de cerveja e isso correspone a ${qtdBebida} ml!`
+        }
+        var resultadoCarnaval = []
+        resultadoCarnaval[0] = gastosCarnaval(consu_diario);
+        resultadoCarnaval[1] = bebidasCaranaval(consu_diario);
+        i = 0
+        while (i < 1) {
+            alert(resultadoCarnaval[i])
+            i++
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
