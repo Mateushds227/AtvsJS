@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script> 
+        var nota1 = prompt("nota 1: ") 
+        var nota2 = prompt("nota 2: ") 
+        var nota3 = prompt("nota 3: ") 
+        
+        var nota1 = nota1 * 1 
+        var nota2 =  nota2 * 1
+        var nota3 =  nota3 * 1
+        
+        var total = ((nota1 + nota2 + nota3) / 3)
+        
+        if(total <= 40){
+            alert("Sua nota foi de " + total +".  Você foi reprovado") 
+            location.reload()
+        }
+        else if(total > 40 && total < 60){
+            alert("Sua nota foi de " + total +".   Você esta de recuperação") 
+            location.reload()
+        }
+        else if(total >= 60 ){
+            alert("Sua nota foi de " + total +".   Você esta aprovado") 
+            location.reload()
+        }
+        else{
+            alert("algo deu errado tente novamente")
+            location.reload()
+        }
+    </script>
+</head>
+<body>
+    
+    
+    
+</body>
+</html> 

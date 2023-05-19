@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script> 
+        var peso = prompt("informe seu peso") 
+        var altura = prompt("iforme a sua altura")
+        var peso = peso*1
+        var altura = altura*1
+        var resultado = (peso / (altura)**2).toFixed(2)
+        
+        if(resultado < 18.5){
+            alert("Seu IMC é de " + resultado + " , e você esta abaixo do peso") 
+            location.reload()
+        }
+        else if (resultado > 18.5 && resultado < 25){
+            alert("Seu IMC é de " + resultado + " , e você esta com o peso normal") 
+            location.reload()
+        }
+        else if (resultado > 25 && resultado < 30){
+            alert("Seu IMC é de " + resultado + " , e você esta com o acima do peso") 
+            location.reload()
+        }
+        else if (resultado > 30){
+            alert("Seu IMC é de " + resultado + " , e você é obeso ")
+            location.reload()
+        }
+        else{
+            alert("algo deu errado tente novamente")
+            location.reload()
+        }
+    </script>
+</head>
+<body>
+    
+    
+    
+</body>
+</html>
