@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        anosEstudo = parseInt(prompt("Quantos anos de estudo você tem ?"))
+        function experiencia(anos) {
+            if (anosEstudo <= 1) {
+                alert("Junior")
+            }
+            else if (anosEstudo > 1 && anosEstudo <= 3) {
+                alert("Pleno")
+            }
+            else if (anosEstudo > 3 && anosEstudo <= 6) {
+                alert("Senior")
+            }
+            else if (anosEstudo >= 7 ) {
+                alert("Mestre Jedi")
+            }
+            else{
+                alert("Coloque um numero valido")
+            }
+            location.reload()
+        }
+
+        experiencia(anosEstudo);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
