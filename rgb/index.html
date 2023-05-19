@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+</head>
+<body style="text-align: center;">
+    <h2>RGB</h2>
+    <form>
+        
+        <label for="red">(R) Vermelho</label><br>
+        <input id="red" min=0 max=255 type = range value="255"><br>
+        <input id="redtext" class="num_visao" readonly style="text-align: center; border: 0px;"></input><br>
+        
+        <label for="green">(G) Verde</label><br>
+        <input id="green" min=0 max=255 type = range value="255"><br>
+        <input  id="greentext" class="num_visao" readonly style="text-align: center; border: 0px;"></input><br>
+        
+        <label for="blue">(B) Azul</label><br>
+        <input id="blue" min=0 max=255 type = range value="255"><br> 
+        <input id="bluetext" class="num_visao" readonly style="text-align: center; border: 0px;"></input>
+
+    </form>
+    <script src="rgb.js"></script>
+</body>
+</html>
