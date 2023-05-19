@@ -2,7 +2,7 @@ produtos = []
 o = 0
 function inicio() {
     let escolha = parseInt(prompt("Selecione uma das opções \r 1 – Incluir Produto \r 2 – Vender Produto \r 3 – Atualizar Estoque \r 4 – Pesquisar Produto \r 5 – Sair do Sistema"))
-    if (!(isNaN(escolha))) {
+    if (!(isNaN(escolha) && escolha < 6 && escolha > 0)) {
         switch (escolha) {
             case 1:
                 incluir()
