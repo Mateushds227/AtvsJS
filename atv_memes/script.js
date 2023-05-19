@@ -9,6 +9,7 @@ async function fetchdados() {
 }
 
 var memes = document.querySelector("#memes")
+console.log(memes)
 id = null
 nome = []
 url = null
