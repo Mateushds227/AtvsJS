@@ -1,0 +1,37 @@
+body{
+
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.quadrado{
+    padding: 10px;
+    border: 3px solid rgb(20, 134, 187);
+}
+td{
+    padding: 10px;
+    border: 2px solid rgb(20, 134, 187);
+}   
+ul,li{
+    list-style-type: none;
+}
+.clickable{
+    cursor:pointer;
+    
+}
+td:hover{
+    cursor:pointer;
+    background-color:  rgb(20, 134, 187);;
+}
+
+.deleteButton{
+    background-color:rgb(127, 255, 212);
+    color:white;
+    font-weight: bold;
+    background-color: darkred;
+    margin-right: 10px;
+    border-radius: 50%;
+}
